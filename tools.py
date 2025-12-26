@@ -18,8 +18,7 @@ class ScrapeToolInput(BaseModel):
 try:
     from crewai.tools import BaseTool
 except Exception:
-    # (혹시 crewai.tools에 없으면 이걸로 시도)
-    from crewai_tools import BaseTool  # type: ignore
+    from crewai_tools import BaseTool  #
 
 
 class ScrapeTool(BaseTool):
